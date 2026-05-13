@@ -3,6 +3,7 @@ variable "vpc_cidr"{
 	tags={
 	  Name="Sheshi"
 	  Owner="B1"
+	  env="Dev/Test"
 	}
 }
 
