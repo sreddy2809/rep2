@@ -1,5 +1,9 @@
 variable "vpc_cidr"{
 	default="192.168.0.0/24"
+	tags={
+	  Name="Sheshi"
+	  Owner="B1"
+	}
 }
 
 resource "aws_vpc" "vpc1"{
