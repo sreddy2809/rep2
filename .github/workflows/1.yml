@@ -8,7 +8,8 @@ jobs:
      steps:
      - name: Print the Trigger Name     
        run: |
-          echo "trigger name ${{ github.event_name }}" 
+          echo "trigger name ${{ github.event_name }}"
+          echo "branch Name is ${{ github.github.ref}}"          
           
           
           
