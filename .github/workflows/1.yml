@@ -1,6 +1,8 @@
 name: Workflow Trigger Filters
 on:
   push:
+    branches:
+    - main
   workflow_dispatch:
 jobs:
    job1:
@@ -9,7 +11,8 @@ jobs:
      - name: Print the Trigger Name     
        run: |
           echo "trigger name ${{ github.event_name }}"
-          echo "branch Name is ${{ github.ref_name}}"          
+          echo "bran
+          ch Name is ${{ github.ref_name}}"          
           
           
           
