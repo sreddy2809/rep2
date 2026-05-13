@@ -1,5 +1,5 @@
 variable "vpc_cidr"{
-	default="192.168.0.0/24"
+	default="192.168.0.0/16"
 }
 
 resource "aws_vpc" "vpc1"{
